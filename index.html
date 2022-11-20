@@ -1,0 +1,250 @@
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body
+{
+ margin:0 auto;
+ text-align:left;
+ width:80%;
+ padding: 5 0;
+  font-family: 'Mukta', sans-serif;
+ background-color:#fff;
+}
+.img2 {
+  float: left;
+}
+.img1 {
+  float: right;
+}
+.clearfix {
+  overflow: auto;
+}
+</style>
+ <head>
+  <title>Nicholas Monath </title>
+  </head>
+<body>
+
+<div class="clearfix">
+  <img class="img2" src="photo1.png" alt="photo"  height="200">
+  <h1>&nbspNicholas Monath </h1>
+  &nbsp Research Scientist
+  <br >&nbsp Google
+  <br>&nbsp nicholas.monath@gmail.com
+</div>
+<h1> Bio </h1>
+
+I am a research scientist at Google. I defended my PhD in computer science in 2021 at the <a href="https://www.cics.umass.edu/"> University of Massachusetts Amherst </a>
+advised by  <a href="https://people.cs.umass.edu/~mccallum/"> Professor Andrew McCallum</a>, where I was a member of the <a href="http://www.iesl.cs.umass.edu/"> Information Extraction and Synthesis Laboratory</a>.
+<br><br>
+
+I have had the great pleasure of collaborating with
+<a href="https://akobre01.github.io/">Ari Kobren</a>  (Oracle), 
+<a href="http://www.manzil.ml/">Manzil Zaheer</a>  (Google), 
+<a href="https://sites.google.com/site/kumaravinavadubey/home">Avinava Dubey</a>, 
+<a href="https://research.google/people/AmrAhmed/">Amr Ahmed</a>  (Google),
+<a href="https://people.cs.umass.edu/~akshay/">Akshay Krishnamurthy</a>  (MSR),
+<a href="https://scholar.google.com/citations?user=ULmldMQAAAAJ&hl=en">Sunil Mohan</a>  (CZI),  
+<a href="https://www.linkedin.com/in/ivanajw">Ivana Williams</a>  (CZI), 
+<a href="https://scholar.google.com/citations?user=6OEv53cAAAAJ&hl=en">Sebastian Macaluso</a> (NYU, Physics), 
+<a href="http://theoryandpractice.org/">Kyle Cranmer</a> (NYU, Physics), 
+<a href="https://people.math.umass.edu/~flaherty/">Pat Flaherty</a>,
+<a href="http://rajarshd.github.io/">Rajarshi Das</a>  (UMass),
+<a href="https://people.cs.umass.edu/~rangell/"> Rico Angell</a>  (UMass), 
+<a href="https://people.cs.umass.edu/~nishantyadav/">Nishant Yadav</a> (UMass), 
+<a href="https://www.mrinmaya.io/">Mrinmaya Sachan</a> (UMass), 
+and more (see papers below)! <br><br>
+
+During my PhD, I am grateful for the oppurtunity to have interned at: Google <i>(Winter 2018-2019, 2019-2020) with Amr Ahmed, Manzil Zaheer and Avinava Dubey</i>;
+CZI <i>(Summer 2019) with Ivana Williams</i>; IBM <i>(Summer 2018) with Michael Glass and Alfio Gliozzo</i>, and Amazon <i>(Summers 2016, 2017) with 
+Shankar Ananthakrishnan and Bo Xiao</i>. <br><br>
+
+I received my B.S. in <a href="http://www.cs.brandeis.edu/"> computer science </a> and <a href="http://www.brandeis.edu/departments/mathematics/"> mathematics </a> from <a href="http://www.brandeis.edu/"> Brandeis University</a> in 2013 where I worked with Professors <a href="http://www.cs.brandeis.edu/~storer/"> James Storer</a> and <a href="http://www.brandeis.edu/facultyguide/person.html?emplid=4b4fcfe64c1c153c08a131c97077c1726072e6c9"> Antonella Di Lillo</a>. <br><br>
+
+
+<h2> Research Interests </h2>
+
+I work on machine learning and natural language processing. In particular, I am most interested
+in scalable clustering, incremental/online clustering, and entity discovery and linking. <br><br>
+
+<b>Discovering Clusters in Continuously Arriving Data.</b> Often we are faced with settings 
+in which new data that arrives all of time. Performing clustering in these settings 
+requires both the discovery of new (emerging) clusters as well as the reconsideration 
+of past clustering decisions in the presence of newly arrived data. We have been designing
+algorithms that use hierarchical structured clusterings to reperesent uncertainty in this
+incremental setting 
+and use tree rearrangements to efficiently reconsider past clustering decisions. Related publications:  
+<a href="https://dl.acm.org/citation.cfm?id=3330929">KDD 2019</a>, <a href="http://dl.acm.org/citation.cfm?id=3098079">KDD 2017</a>.
+<br><br>
+
+<b>Entity Discovery.</b> 
+Entities are mentioned ambiguously
+in both structured (e.g., databases) as well as unstructured (e.g., natural language) data. 
+These entities may belong to many different (possibly overlapping) 
+types. Resolving the ambiguity present in these entity mentions and/or discovering their 
+entity types is necessary for many tasks such as the automatic construction of knowledge-bases, and question answering. 
+This task is especially difficult when the catalog of entities or attributes are not known in advance. 
+This last problem, often known as “entity discovery,” is one of clustering, with the special challenges that it needs to operate on incrementally arriving data, 
+at large scale, ideally with non greedy behavior. Related publications: 
+Related publications:  
+<a href="https://arxiv.org/abs/2010.11253">NAACL 2021</a>, 
+<a href="https://arxiv.org/abs/2010.03548">Findings of EMNLP 2020</a>, 
+<a href="https://dl.acm.org/citation.cfm?id=3330929">KDD 2019</a>, 
+<a href="https://arxiv.org/abs/1907.10165">ACL 2019</a>.
+<br><br>
+
+<b>Modeling Abstractions for Continual / Life-long Learning.</b>
+Clusters provide summaries of data points. Hierarchical and DAG-structured clustering
+can provide abstractions at multiple granularities. Recent work in continual and
+few shot learning has shown that we can use clusters in place of individual points
+to more effectively generalize to new classes as well as to prevent catastrophic forgetting.
+Related publications:  
+<a href="https://arxiv.org/abs/2010.03548">Findings of EMNLP 2020</a>.
+<br><br>
+
+<b>Relaxing Tree Structures.</b>
+We are interested in alternatives to standard hierarchical clustering representations to facilitate
+end-to-end optimization, richer representations of uncertainty, and scalability. We have proposed
+continuous representations of trees in the unit ball as well as DAG-structured alternatives to trees.
+
+Related publications:  
+<a href="http://proceedings.mlr.press/v130/monath21a.html">AISTATS 2021</a>, 
+<a href="https://dl.acm.org/citation.cfm?id=3330997">KDD 2019</a>.
+
+<h1> Conference Publications </h1>
+<ol>
+  <li>
+    Tianyu Liu, Yuchen Eleanor Jiang, Nicholas Monath, Ryan Cotterell, Mrinmaya Sachan. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Autoregressive Structured Prediction with Language Models</p>. Findings of EMNLP, 2022. <a href="https://arxiv.org/abs/2210.14698">[pdf]</a> <br><br>
+  </li>
+  <li>
+    Nishant Yadav, Nicholas Monath, Rico Angell, Manzil Zaheer, Andrew McCallum <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Efficient Nearest Neighbor Search for Cross-Encoder Models
+      using Matrix Factorization</p>. EMNLP, 2022. <a href="https://arxiv.org/abs/2210.12579">[pdf]</a> <br><br>
+  </li>
+  <li>
+    Dhruv Agarwal, Rico Angell, Nicholas Monath, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Entity Linking via Explicit Mention-Mention Coreference Modeling</p>. NAACL, 2022. <a href="https://aclanthology.org/2022.naacl-main.343/">[pdf]</a><br><br>
+  </li>
+  <li>
+    Rico Angell, Nicholas Monath, Nishant Yadav, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Interactive Correlation Clustering with Existential Cluster Constraints.</p> ICML, 2022. <a href="https://proceedings.mlr.press/v162/angell22a.html">[pdf]</a><br><br>
+  </li>
+  <li>
+    Siddhartha Mishra, Nicholas Monath, Michael Boratko, Ariel Kobren, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">An evaluative measure of clustering methods incorporating hyperparameter sensitivity.</p> AAAI, 2022. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20747">[pdf]</a><br><br>
+  </li>
+  <li>
+    Archan Ray, Nicholas Monath, Andrew McCallum, Cameron Musco. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Sublinear Time Approximation of Text Similarity Matrices.</p> AAAI, 2022. <a href="https://arxiv.org/abs/2112.09631">[arxiv]</a> <a href="https://www.aaai.org/AAAI22Papers/AAAI-12742.RayA.pdf">[AAAI pdf]</a><br><br>
+  </li>
+  <li>
+    Michael Boratko, Dongxu Zhang, Nicholas Monath, Luke Vilnis, Kenneth L Clarkson, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Capacity and Bias of Learned Geometric Embeddings for Directed Graphs.</p> NeurIPS, 2021. <a href="https://proceedings.neurips.cc/paper/2021/hash/88d25099b103efd638163ecb40a55589-Abstract.html">[pdf]</a><br><br>
+  </li>
+<li> <b>Nicholas Monath</b>, Avinava Dubey, Guru Guruganesh, Manzil Zaheer, Amr
+  Ahmed, Andrew McCallum, Gokhan Mergen, Marc Najork, Mert Terzihan, Bryon
+  Tjanaka, Yuan Wang, Yuchen Wu. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Scalable Hierarchical Agglomerative Clustering.</p> KDD. 2021.  <a href="https://arxiv.org/abs/2010.11821">[arxiv]</a> <a href="https://dl.acm.org/doi/10.1145/3447548.3467404">[kdd pdf]</a>  <a href="https://github.com/nmonath/scc">[scipy code]</a> <a href="https://github.com/nmonath/graphgrove">[cpp code, python bindings]</a> <a href="https://dl.acm.org/doi/10.1145/3447548.3467404#video_stream_uuid%3Ae2dd523b-e3b0-4f93-b62a-dcc9a372faeb">[video]</a><br><br></li>
+<li> Craig Greenberg*, Sebastian Macaluso*, <b>Nicholas Monath*</b>, Avinava Dubey, Patrick Flaherty, Manzil Zaheer, Amr Ahmed, Kyle Cranmer, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Exact and Approximate Hierarchical Clustering with A*. </p>  UAI. 2021. (* equal contribution). <a href="https://arxiv.org/abs/2104.07061">[arxiv]</a> <a href="https://underline.io/lecture/28778-770-iv-g3-exact-and-approximate-hierarchical-clustering-using-a*">[video]</a><br><br></li>
+<li> Raghuveer Thirukovalluru, <b>Nicholas Monath</b>, Kumar Shridhar, Manzil Zaheer, Mrinmaya Sachan and Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Scaling Within Document Coreference to Long Texts.</p>  Findings of ACL, 2021. <a href="https://aclanthology.org/2021.findings-acl.343.pdf">[pdf]</a> <a href="https://underline.io/lecture/26434-scaling-within-document-coreference-to-long-texts">[video]</a>   <br><br></li>
+<li> Rico Angell, <b>Nicholas Monath</b>, Sunil Mohan, Nishant Yadav, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Clustering-based Inference for Zero-Shot Biomedical Entity Linking.</p>  NAACL, 2021. <a href="https://arxiv.org/abs/2010.11253">[arxiv]</a><br><br></li>
+<li> <b>Nicholas Monath</b>,  Manzil Zaheer, Avinava Dubey, Amr Ahmed, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">DAG-Structured Clustering by Nearest Neighbors</p>. AISTATS, 2021. <a href="http://proceedings.mlr.press/v130/monath21a.html">[paper]</a>  <a href="https://github.com/nmonath/graphgrove">[code]</a>   <a href="https://slideslive.com/38953209/dagstructured-clustering-by-nearest-neighbors?ref=speaker-24785-latest">[video]</a> <br><br></li>
+<li> Craig S. Greenberg*, Sebastian Macaluso*, <b>Nicholas Monath</b>, Ji-Ah Lee, Patrick Flaherty, Kyle Cranmer, Andrew McGregor, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Data Structures & Algorithms for Exact Inference in Hierarchical Clustering
+  </p>. AISTATS, 2021. <a href="https://arxiv.org/abs/2002.11661">[arxiv]</a>  <a href="https://github.com/SebastianMacaluso/ClusterTrellis">[code]</a>  <br><br></li>  
+<li>Rajarshi Das, Ameya Godbole, <b>Nicholas Monath</b>, Manzil Zaheer, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Probabilistic Case-based Reasoning in Knowledge Bases </p>. Findings of EMNLP 2020 <a href="https://arxiv.org/abs/2010.03548">[arxiv]</a> <a href="https://github.com/ameyagodbole/Prob-CBR">[code]</a><br><br></li>
+<li>Dung Thai, Zhiyang Xu, <b>Nicholas Monath</b>, Boris Veytsman, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Using BibTeX to Automatically Generate Labeled Data for Citation Field Extraction. </p> AKBC. 2020 <a href="https://openreview.net/pdf?id=OnUd3hf3o3">[pdf]</a><br> <br></li>
+<li> Derek Tam, <b>Nicholas Monath</b>, Ari Kobren, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Predicting Institution Hierarchies with Set-based Models</p> AKBC. 2020. <a href="https://openreview.net/pdf?id=pJg1LahGc0">[pdf]</a><br> <br></li>
+<li> Derek Tam, <b>Nicholas Monath</b>, Ari Kobren, Aaron Traylor, Rajarshi Das, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Optimal Transport-based Alignment of Learned Character Representations for String Similarity. </p> ACL. 2019. <a href="https://arxiv.org/abs/1907.10165">[arxiv]</a> <a href="https://www.aclweb.org/anthology/P19-1592">[pdf]</a> <a href="https://github.com/iesl/stance">[code + data]</a> <br> <br></li>
+<li> <b> Nicholas Monath</b>*, Ari Kobren*, Akshay Krishnamurthy, Michael Glass, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Scalable Hierarchical Clustering via Tree Grafting.</p> KDD. 2019 (Oral presentation) (* Equal Contribution). <a href="https://dl.acm.org/citation.cfm?id=3330929">[pdf]</a> <a href="https://arxiv.org/abs/2001.00076">[arxiv]</a> <a href="https://github.com/iesl/grinch">[code]</a><br><br></li>
+<li> <b> Nicholas Monath</b>, Manzil Zaheer, Daniel Silva, Andrew McCallum, Amr Ahmed. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Gradient-based Hierarchical Clustering using Continuous Representations of Trees in Hyperbolic Space.</p> KDD. 2019. <a href="https://dl.acm.org/citation.cfm?id=3330997">[pdf]</a> <a href="https://github.com/nmonath/hyperbolic_hierarchical_clustering">[code]</a><br><br></li>
+<li> Nishant Yadav, Ari Kobren, <b> Nicholas Monath</b>, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Supervised Hierarchical Clustering with Exponential Linkage. </p> ICML. 2019. <a href="https://arxiv.org/abs/1906.07859">[arxiv]</a> <a href="http://proceedings.mlr.press/v97/yadav19a/yadav19a.pdf">[pdf]</a> <a href="https://github.com/iesl/expLinkage">[code]</a> <br><br></li>
+<li> Ari Kobren, <b> Nicholas Monath</b>, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Integrating User Feedback under Identity Uncertainty in Knowledge Base Construction. </p> AKBC, 2019. <a href="https://openreview.net/pdf?id=SygLHbcapm">[pdf]</a> <br><br></li>
+<li> Craig Greenberg, <b> Nicholas Monath</b>, Ari Kobren, Patrick Flaherty, Andrew McGregor, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Compact Representation of Uncertainty In Clustering. </p> NeurIPS 2018. <a href="https://papers.nips.cc/paper/8081-compact-representation-of-uncertainty-in-clustering.pdf">[pdf]</a><br><br></li>
+<li> Bo Xiao, <b> Nicholas Monath</b>, Shankar Ananthakrishnan, Abishek Ravi. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Play Duration based User-Entity Affinity Modeling in Spoken Dialog System </p> Interspeech 2018. <a href="https://arxiv.org/pdf/1806.11479.pdf">[pdf]</a><br><br></li>
+<li> Ari Kobren*, <b> Nicholas Monath</b>*, Akshay Krishnamurthy, and Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> A Hierarchical Algorithm for Extreme Clustering </p>. KDD. 2017. (* equal contribution). (Oral Presenation). <a href="http://dl.acm.org/citation.cfm?id=3098079">[pdf]</a> <a href="https://github.com/iesl/xcluster">[code]</a> <a href="https://www.youtube.com/watch?v=w_iFHSWJhEA">[talk]</a> <a href="https://www.youtube.com/watch?v=t1XL1IptjAA">[promo video]</a><br><br></li>
+</ol>
+
+
+<h1>PhD Thesis</h1>
+<p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Incremental Non-Greedy Clustering at Scale.</p> <a href="https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=3515&context=dissertations_2">[official university pdf]</a>
+
+
+<h1> Workshop & Other Publications</h1>
+<ol>
+
+<li>
+Nishant Yadav, <b>Nicholas Monath</b>, Rico Angell, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Event & Entity Coreference using Trees to Encode Uncertainty in Joint Decisions. </p>
+ Workshop on Computational Models of Reference, Anaphora and Coreference (CRAC) at EMNLP 2021. <br><br></li>
+
+<li> Sunil Mohan, Rico Angell, <b>Nicholas Monath</b>, Andrew McCallum. Low Resource Recognition and Linking of Biomedical Concepts from a Large Ontology. BCB. 2021. <a href="https://arxiv.org/abs/2101.10587">[arxiv]</a><br><br></li>
+
+<li>Ethan Shen, Maria Brbic, <b>Nicholas Monath</b>, Jiaqi Zhai, Manzil Zaheer, Jure Leskovec. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;">Model-Agnostic Graph Regularization for Few-Shot Learning</p>. NeurIPS Workshop on Meta-Learning, 2020. <a href="https://arxiv.org/abs/2102.07077">[arxiv]</a><br><br></li>
+
+<li> <b> Nicholas Monath </b>*, Ari Kobren*, Akshay Krishnamurthy, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Gradient-based Hierarchical Clustering</p>. NIPS Workshop on Discrete Structures in Machine Learning. 2017. (Oral Presentation). <a href="papers/gradient_based_hierarchical_clustering_discml_ws.pdf"> [pdf]</a><br><br></li>
+
+<li> Ari Kobren, <b> Nicholas Monath</b>, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Entity-centric Attribute Feedback for Interactive Knowledge Bases. </p> NIPS Workshop on Automated Knowledge Base Construction. 2017. <a href="http://www.akbc.ws/2017/papers/27_paper.pdf">[pdf]</a><br><br></li>
+
+<li> Aaron Traylor *, <b> Nicholas Monath </b> *, Rajarshi Das, Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Learning String Alignments for Entity Aliases</p>. NIPS Workshop on Automated Knowledge Base Construction. 2017. <a href="http://www.akbc.ws/2017/papers/28_paper.pdf">[pdf]</a> <a href="https://github.com/iesl/learned-string-alignments"> [code]</a><br><br></li>
+
+<li> Haw-Shiuan Chang, Abdurrahman Munir, Ao Liu, Johnny Tian-Zheng Wei, Aaron Traylor, Ajay Nagesh, <b> Nicholas Monath</b>, Patrick Verga, Emma Strubell, and Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Extracting Multilingual Relations under Limited Resources: TAC 2016 Cold-Start KB construction and Slot-Filling using Compositional Universal Schema. </p> NIST TAC KBP Workshop 2016. Notebook version <a href="http://people.umass.edu/hawshiuancha/UMass_IESL_TAC_notebook.pdf">[pdf]</a><br><br></li>
+
+<li> Benjamin Roth, <b>Nicholas Monath</b>, David Belanger, Emma Strubell, Patrick Verga and Andrew McCallum <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Building Knowledge Bases with Universal Schema: Cold Start and Slot-Filling Approaches </p> TAC KBP 2015 Workshop <a href="https://people.cs.umass.edu/~pat/pdfs/tac_workshop.pdf"> [pdf]</a><br><br></li>
+
+<li> <b> Nicholas Monath</b> and Andrew McCallum. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Discriminative Hierarchical Coreference for Inventor Disambiguation</p>. PatentsView Inventor Disambiguation Technical Workshop. September 2015  <a href="http://www.patentsview.org/data/presentations/UMassInventorDisambiguation.pdf"> [slides]</a> <a href="https://github.com/iesl/inventor-disambiguation"> [code]</a><br><br></li>
+
+<li> Mykel J. Kochenderfer and <b> Nicholas Monath</b>. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Data Compression of Optimal Value Functions for Markov Decision Processes </p> Data Compression Conference. Snowbird Utah 2013.</li>
+</ol>
+
+<h1> Awards </h1>
+
+1st place. <p style="color:#4682B4;display:inline;text-decoration: underline dotted;"> Inventor Disambiguation Challenge. </p> PatentsView Inventor Disambiguation Technical Workshop. September 2015. <a href="http://www.dev.patentsview.org/workshop/index.html"> [link]</a> <a href="http://www.patentsview.org/data/presentations/UMassInventorDisambiguation.pdf"> [slides]</a> <a href="https://github.com/iesl/inventor-disambiguation"> [code]</a>. Our inventor name disambiguation system was integrated into <a href="http://www.patentsview.org/"> USPTO PatentsView website</a>.
+<br><br>
+
+
+
+<h1> Education </h1>
+<img src = "https://people.cs.umass.edu/~nmonath/UMASS.jpg"  style = 'height: 100'>
+<img src = "https://people.cs.umass.edu/~nmonath/Brandeis.png"  style = 'height: 100'>
+
+<br>
+<br>
+<b>Graduate: </b>
+<br> University of Massachusetts Amherst.
+<br> Started MS (only) Fall 2013
+<br> Entered PhD Fall 2015
+<br>
+<br> <b> Undergraduate: </b>
+<br> Brandeis University. BS 2013. Computer Science and Mathematics.
+<br> Graduated Summa Cum Laude. 
+<br> Phi Beta Kappa. 
+<br> Highest Honors for Undergraduate Thesis. Michtom Prize for Academic Excellence in Computer Science.
+<br>
+
+
+<h1> Misc </h1>
+
+  <!-- <img class="img1" src="kd_overview.png" alt="KDCOVID" width="400"> -->
+  <b> KDCOVID </b> - April 2020 -  We have released KDCOVID. KDCOVID retrieves papers by measuring similarity between queries and sentences in the full text of papers in CORD19 corpus. KDCOVID highlights entities linked to knowledge-bases and drug-gene-disease associations. Developed by Manzil Zaheer, Nicholas Monath, Shehzaad Dhuliawala, Taamannae Taabassum, Rajarshi Das, Bhuwan Dhingra, and Andrew McCallum. <a href="http://kdcovid.nl/"><b>[www.kdcovid.nl]</b></a> <a href="https://www.kaggle.com/nmonath/knowledge-discovery-from-full-text-research-papers"><b>[Kaggle submission]</b></a> <a href="https://github.com/nmonath/kdcovid"><b>[code on github]</b></a>
+<br><br>
+  <!-- <img class="img1" src="sets_parts.png" alt="Sets&Parts" width="400"> -->
+  <b> Sets & Partitions </b> - December 2019 - I co-organized The First Workshop on Sets and Partitions, was held as a part of the NeurIPS 2019 conference, with Manzil Zaheer, Ari Kobren, Junier Oliva, Barnabás Póczos, Ruslan Salakhutdinov, Andrew McCallum. The workshop was focused on models for tasks with set-based inputs/outputs as well as models of partitions and novel clustering methodology. 
+  <a href="https://sites.google.com/view/sets-parts/home"><b>[Workshop Site]</b></a>
+
+<h1> Talks </h1>
+
+<b> Scalable Hierarchical Clustering with Tree Grafting </b> KDD 2019. <a href="talks/grinch_kdd19.pdf">[slides]</a>
+<br><br>
+
+<b> Optimal Transport-based Alignment of
+Learned Character Representations
+for String Similarity </b> ACL 2019. <a href="talks/stance_acl19.pdf">[slides]</a>
+<br><br>
+
+<b> A Hierarchical Algorithm for Extreme Clustering </b> KDD 2017. <a href="talks/perch_poster_kdd17.pdf">[poster]</a> <a href="talks/perch_data_science_symposium17.pdf">[slides from UMass Data Science Symposium]</a>
+<br><br>
+
+<b> Discriminative Hierarchical
+Coreference
+for Inventor Disambiguation </b> PatentsView Inventor Disambiguation Technical Workshop. 2015. <a href="http://www.patentsview.org/data/presentations/UMassInventorDisambiguation.pdf"> [slides]</a>. (Our inventor name disambiguation system received 1st place and is a part of the <a href="http://www.patentsview.org/"> USPTO PatentsView website</a>).
+<br><br>
+
+
+
+</body>
+
+
+</html>
